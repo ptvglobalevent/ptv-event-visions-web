@@ -1,0 +1,143 @@
+
+import { useState } from "react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+
+export function Gallery() {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  const galleryImages = [
+    {
+      src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Corporate Event Setup",
+      category: "Corporate"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Wedding Reception",
+      category: "Wedding"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Conference Setup",
+      category: "Corporate"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Tech Event",
+      category: "Corporate"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Outdoor Festival",
+      category: "Festival"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Government Function",
+      category: "Government"
+    }
+  ];
+
+  const nextImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage + 1) % galleryImages.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage(selectedImage === 0 ? galleryImages.length - 1 : selectedImage - 1);
+    }
+  };
+
+  return (
+    <section id="gallery" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Portfolio</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover the magic we create for weddings, corporate events, festivals, and special occasions
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {galleryImages.map((image, index) => (
+            <div 
+              key={index}
+              className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              onClick={() => setSelectedImage(index)}
+            >
+              <img 
+                src={image.src} 
+                alt={image.title}
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-bold">{image.title}</h3>
+                  <p className="text-sm text-gray-200">{image.category}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Image Modal */}
+        {selectedImage !== null && (
+          <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+            <button 
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+            >
+              <X className="h-8 w-8" />
+            </button>
+            
+            <button 
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+            >
+              <ChevronLeft className="h-8 w-8" />
+            </button>
+            
+            <button 
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+            >
+              <ChevronRight className="h-8 w-8" />
+            </button>
+            
+            <div className="max-w-4xl max-h-full">
+              <img 
+                src={galleryImages[selectedImage].src} 
+                alt={galleryImages[selectedImage].title}
+                className="max-w-full max-h-full object-contain"
+              />
+              <div className="text-center mt-4 text-white">
+                <h3 className="text-xl font-bold">{galleryImages[selectedImage].title}</h3>
+                <p className="text-gray-300">{galleryImages[selectedImage].category}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <div className="mt-16 bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl p-8 md:p-12 text-white text-center">
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create Magic?</h3>
+          <p className="text-xl text-blue-100 mb-8">
+            Let us bring your vision to life with our professional event planning and premium equipment rental services.
+          </p>
+          <button 
+            onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) element.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
+          >
+            Start Planning Your Event
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
