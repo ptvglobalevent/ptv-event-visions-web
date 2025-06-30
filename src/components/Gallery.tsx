@@ -66,11 +66,11 @@ export function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="gallery" className="py-20 bg-gradient-to-br from-pink-50 to-rose-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Portfolio</span>
+            Our <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">Portfolio</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover the magic we create for weddings, corporate events, festivals, and special occasions
@@ -89,14 +89,14 @@ export function Gallery() {
                 alt={image.title}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-pink-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-lg font-bold">{image.title}</h3>
-                  <p className="text-sm text-gray-200">{image.category}</p>
+                  <p className="text-sm text-pink-100">{image.category}</p>
                 </div>
               </div>
               <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-pink-500/30 backdrop-blur-sm rounded-full flex items-center justify-center">
                   <span className="text-white text-sm">+</span>
                 </div>
               </div>
@@ -109,21 +109,21 @@ export function Gallery() {
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
             <button 
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+              className="absolute top-4 right-4 text-white hover:text-pink-300 z-10"
             >
               <X className="h-8 w-8" />
             </button>
             
             <button 
               onClick={prevImage}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-pink-300 z-10"
             >
               <ChevronLeft className="h-8 w-8" />
             </button>
             
             <button 
               onClick={nextImage}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-pink-300 z-10"
             >
               <ChevronRight className="h-8 w-8" />
             </button>
@@ -136,17 +136,17 @@ export function Gallery() {
               />
               <div className="text-center mt-4 text-white">
                 <h3 className="text-xl font-bold">{galleryImages[selectedImage].title}</h3>
-                <p className="text-gray-300">{galleryImages[selectedImage].category}</p>
+                <p className="text-pink-200">{galleryImages[selectedImage].category}</p>
               </div>
             </div>
           </div>
         )}
 
-        <div className="mt-16 relative bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
+        <div className="mt-16 relative bg-gradient-to-r from-pink-500 to-rose-500 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-20"></div>
           <div className="relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create Magic?</h3>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-pink-100 mb-8">
               Let us bring your vision to life with our professional event planning and premium equipment rental services.
             </p>
             <button 
@@ -154,7 +154,7 @@ export function Gallery() {
                 const element = document.getElementById('contact');
                 if (element) element.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
+              className="bg-white text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-300"
             >
               Start Planning Your Event
             </button>
