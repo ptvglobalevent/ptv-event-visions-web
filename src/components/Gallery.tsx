@@ -7,34 +7,49 @@ export function Gallery() {
 
   const galleryImages = [
     {
+      src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Elegant Wedding Reception",
+      category: "Wedding"
+    },
+    {
       src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Corporate Event Setup",
       category: "Corporate"
     },
     {
-      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Wedding Reception",
-      category: "Wedding"
+      src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Outdoor Event Tents",
+      category: "Outdoor"
     },
     {
-      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Conference Setup",
-      category: "Corporate"
+      src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Professional Equipment Setup",
+      category: "Equipment"
     },
     {
-      src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Tech Event",
-      category: "Corporate"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Outdoor Festival",
+      src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Festival Lighting & Stage",
       category: "Festival"
     },
     {
-      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Government Function",
       category: "Government"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Sound & Audio Setup",
+      category: "Audio"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Climate Control Setup",
+      category: "Equipment"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Luxury Event Flooring",
+      category: "Decoration"
     }
   ];
 
@@ -80,6 +95,11 @@ export function Gallery() {
                   <p className="text-sm text-gray-200">{image.category}</p>
                 </div>
               </div>
+              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm">+</span>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -122,20 +142,23 @@ export function Gallery() {
           </div>
         )}
 
-        <div className="mt-16 bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl p-8 md:p-12 text-white text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create Magic?</h3>
-          <p className="text-xl text-blue-100 mb-8">
-            Let us bring your vision to life with our professional event planning and premium equipment rental services.
-          </p>
-          <button 
-            onClick={() => {
-              const element = document.getElementById('contact');
-              if (element) element.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
-          >
-            Start Planning Your Event
-          </button>
+        <div className="mt-16 relative bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-20"></div>
+          <div className="relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create Magic?</h3>
+            <p className="text-xl text-blue-100 mb-8">
+              Let us bring your vision to life with our professional event planning and premium equipment rental services.
+            </p>
+            <button 
+              onClick={() => {
+                const element = document.getElementById('contact');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
+            >
+              Start Planning Your Event
+            </button>
+          </div>
         </div>
       </div>
     </section>
