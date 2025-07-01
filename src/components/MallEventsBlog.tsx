@@ -1,6 +1,7 @@
 
 import { Calendar, MapPin, Users, Star } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export function MallEventsBlog() {
   const caseStudies = [
@@ -11,7 +12,8 @@ export function MallEventsBlog() {
       date: "December 2024",
       location: "Ikeja City Mall, Lagos",
       attendees: "2,000+",
-      rating: 5
+      rating: 5,
+      link: "/blog/mall-fashion-food-exhibition-setup"
     },
     {
       title: "5 Things to Know Before Hosting an Event in a Shopping Mall",
@@ -20,7 +22,8 @@ export function MallEventsBlog() {
       date: "November 2024",
       location: "Various Locations",
       attendees: "Guide",
-      rating: 5
+      rating: 5,
+      link: "/blog/5-things-mall-event-planning"
     }
   ];
 
@@ -38,54 +41,56 @@ export function MallEventsBlog() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {caseStudies.map((study, index) => (
-            <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300 border-0 shadow-md overflow-hidden group cursor-pointer">
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={study.image} 
-                  alt={study.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="flex items-center justify-between text-white">
-                    <div className="flex items-center space-x-4 text-sm">
-                      <div className="flex items-center space-x-1">
-                        <Calendar className="h-4 w-4" />
-                        <span>{study.date}</span>
+            <Link key={index} to={study.link}>
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-0 shadow-md overflow-hidden group cursor-pointer">
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={study.image} 
+                    alt={study.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="flex items-center justify-between text-white">
+                      <div className="flex items-center space-x-4 text-sm">
+                        <div className="flex items-center space-x-1">
+                          <Calendar className="h-4 w-4" />
+                          <span>{study.date}</span>
+                        </div>
+                        <div className="flex items-center space-x-1">
+                          <MapPin className="h-4 w-4" />
+                          <span>{study.location}</span>
+                        </div>
                       </div>
                       <div className="flex items-center space-x-1">
-                        <MapPin className="h-4 w-4" />
-                        <span>{study.location}</span>
+                        {[...Array(study.rating)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                        ))}
                       </div>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      {[...Array(study.rating)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      ))}
                     </div>
                   </div>
                 </div>
-              </div>
-              <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-gray-900 group-hover:text-pink-600 transition-colors">
-                  {study.title}
-                </CardTitle>
-                <CardDescription className="text-gray-600">
-                  {study.excerpt}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-1 text-pink-600">
-                    <Users className="h-4 w-4" />
-                    <span className="text-sm font-medium">{study.attendees} attendees</span>
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl text-gray-900 group-hover:text-pink-600 transition-colors">
+                    {study.title}
+                  </CardTitle>
+                  <CardDescription className="text-gray-600">
+                    {study.excerpt}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-1 text-pink-600">
+                      <Users className="h-4 w-4" />
+                      <span className="text-sm font-medium">{study.attendees} attendees</span>
+                    </div>
+                    <span className="text-pink-600 hover:text-pink-700 font-medium text-sm transition-colors">
+                      Read More →
+                    </span>
                   </div>
-                  <button className="text-pink-600 hover:text-pink-700 font-medium text-sm transition-colors">
-                    Read More →
-                  </button>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 

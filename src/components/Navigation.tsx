@@ -44,24 +44,24 @@ export function Navigation() {
                 </button>
                 {isServicesOpen && (
                   <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border border-pink-100 py-2 z-50">
-                    <button 
-                      onClick={() => scrollToSection('services')} 
+                    <a 
+                      href="/services" 
                       className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors"
                     >
-                      General Event Planning
-                    </button>
-                    <button 
-                      onClick={() => scrollToSection('services')} 
+                      All Services
+                    </a>
+                    <a 
+                      href="/equipment-rental" 
                       className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors"
                     >
-                      Event Rentals
-                    </button>
-                    <button 
-                      onClick={() => scrollToSection('mall-services')} 
+                      Equipment Rental
+                    </a>
+                    <a 
+                      href="/services/mall-events" 
                       className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors font-medium"
                     >
                       Mall Events (Fashion + Food Expos)
-                    </button>
+                    </a>
                   </div>
                 )}
               </div>
@@ -102,15 +102,15 @@ export function Navigation() {
             <div className="px-3 py-2">
               <div className="text-base font-medium text-gray-700 mb-2">Services</div>
               <div className="pl-4 space-y-1">
-                <button onClick={() => scrollToSection('services')} className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-600 w-full text-left">
-                  General Event Planning
-                </button>
-                <button onClick={() => scrollToSection('services')} className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-600 w-full text-left">
-                  Event Rentals
-                </button>
-                <button onClick={() => scrollToSection('mall-services')} className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-600 w-full text-left font-medium">
+                <a href="/services" className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-600 w-full text-left">
+                  All Services
+                </a>
+                <a href="/equipment-rental" className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-600 w-full text-left">
+                  Equipment Rental
+                </a>
+                <a href="/services/mall-events" className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-600 w-full text-left font-medium">
                   Mall Events (Fashion + Food Expos)
-                </button>
+                </a>
               </div>
             </div>
             <button onClick={() => scrollToSection('gallery')} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-pink-600 w-full text-left">
