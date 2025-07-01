@@ -13,6 +13,7 @@ import { EventCategories } from "@/components/EventCategories";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { StatsShowcase } from "@/components/StatsShowcase";
 import { BookingCTA } from "@/components/BookingCTA";
+import { MallEventsBlog } from "@/components/MallEventsBlog";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       <EventCategories />
       <ProcessSteps />
       <Gallery />
+      <MallEventsBlog />
       <StatsShowcase />
       <Testimonials />
       <BookingCTA />

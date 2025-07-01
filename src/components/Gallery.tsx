@@ -17,6 +17,21 @@ export function Gallery() {
       category: "Corporate"
     },
     {
+      src: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Fashion Show Runway Setup",
+      category: "Mall Event"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Mall Exhibition Layout",
+      category: "Mall Event"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Food & Drink Expo Setup",
+      category: "Mall Event"
+    },
+    {
       src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Outdoor Event Tents",
       category: "Outdoor"
@@ -73,16 +88,57 @@ export function Gallery() {
             Our <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">Portfolio</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover the magic we create for weddings, corporate events, festivals, and special occasions
+            Discover the magic we create for weddings, corporate events, festivals, mall exhibitions, and special occasions
           </p>
         </div>
 
+        {/* Featured Mall Events Section */}
+        <div className="mb-16 bg-white/60 backdrop-blur-sm rounded-3xl p-8">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+            Featured <span className="text-pink-600">Mall Event Setups</span>
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {galleryImages.filter(img => img.category === "Mall Event").map((image, index) => (
+              <div 
+                key={index}
+                className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                onClick={() => setSelectedImage(galleryImages.findIndex(img => img.src === image.src))}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.title}
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-pink-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-lg font-bold">{image.title}</h3>
+                    <p className="text-sm text-pink-100">{image.category}</p>
+                  </div>
+                </div>
+                <div className="absolute top-4 left-4">
+                  <span className="bg-pink-500/80 text-white px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm">
+                    {image.category}
+                  </span>
+                </div>
+                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="w-8 h-8 bg-pink-500/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm">+</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <p className="text-pink-600 font-medium">Sample layouts for mall events - contact us for your custom setup!</p>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryImages.map((image, index) => (
+          {galleryImages.filter(img => img.category !== "Mall Event").map((image, index) => (
             <div 
               key={index}
               className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              onClick={() => setSelectedImage(index)}
+              onClick={() => setSelectedImage(galleryImages.findIndex(img => img.src === image.src))}
             >
               <img 
                 src={image.src} 
