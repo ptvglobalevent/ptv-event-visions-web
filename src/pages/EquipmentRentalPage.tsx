@@ -1,5 +1,6 @@
 
 import { Tent, Sofa, Fan, Zap, Monitor, Music, Settings, Camera, Users, Star, Check } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -11,9 +12,9 @@ export default function EquipmentRentalPage() {
       title: "Tents & Canopies",
       description: "Weather-resistant structures for any event size",
       items: [
-        { name: "Marquee Tents", capacity: "50-500 guests", price: "₦15,000/day", image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "Pop-up Canopies", capacity: "10-50 guests", price: "₦5,000/day", image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "Wedding Tents", capacity: "100-300 guests", price: "₦25,000/day", image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
+        { name: "Marquee Tents", capacity: "50-500 guests", image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "Pop-up Canopies", capacity: "10-50 guests", image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "Wedding Tents", capacity: "100-300 guests", image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
       ]
     },
     {
@@ -21,9 +22,9 @@ export default function EquipmentRentalPage() {
       title: "Seating & Tables",
       description: "Comfortable seating solutions for every occasion",
       items: [
-        { name: "Chiavari Chairs", capacity: "Gold/Silver finish", price: "₦800/chair", image: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "Round Tables", capacity: "8-10 seater", price: "₦2,500/table", image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "VIP Lounge Sets", capacity: "4-6 person sets", price: "₦12,000/set", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
+        { name: "Chiavari Chairs", capacity: "Gold/Silver finish", image: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "Round Tables", capacity: "8-10 seater", image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "VIP Lounge Sets", capacity: "4-6 person sets", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
       ]
     },
     {
@@ -31,9 +32,9 @@ export default function EquipmentRentalPage() {
       title: "Audio Visual",
       description: "High-quality displays and sound systems",
       items: [
-        { name: "LED Video Walls", capacity: "P3.91 indoor panels", price: "₦45,000/day", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "Projection Systems", capacity: "5000+ lumens", price: "₦15,000/day", image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "Sound Systems", capacity: "Line array speakers", price: "₦20,000/day", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
+        { name: "LED Video Walls", capacity: "P3.91 indoor panels", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "Projection Systems", capacity: "5000+ lumens", image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "Sound Systems", capacity: "Line array speakers", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
       ]
     },
     {
@@ -41,9 +42,9 @@ export default function EquipmentRentalPage() {
       title: "Power & Climate",
       description: "Reliable power and climate control solutions",
       items: [
-        { name: "Generators", capacity: "15KVA - 100KVA", price: "₦25,000/day", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "Air Conditioners", capacity: "5HP mobile units", price: "₦8,000/day", image: "https://images.unsplash.com/photo-1635948321059-de2ad7db523a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "Industrial Fans", capacity: "Standing fans", price: "₦2,000/day", image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
+        { name: "Generators", capacity: "15KVA - 100KVA", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "Air Conditioners", capacity: "5HP mobile units", image: "https://images.unsplash.com/photo-1635948321059-de2ad7db523a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "Industrial Fans", capacity: "Standing fans", image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
       ]
     }
   ];
@@ -51,7 +52,6 @@ export default function EquipmentRentalPage() {
   const packages = [
     {
       name: "Basic Package",
-      price: "₦75,000",
       duration: "1 day event",
       features: [
         "Tent for 50 guests",
@@ -64,7 +64,6 @@ export default function EquipmentRentalPage() {
     },
     {
       name: "Premium Package", 
-      price: "₦200,000",
       duration: "1 day event",
       features: [
         "Marquee for 150 guests",
@@ -78,7 +77,6 @@ export default function EquipmentRentalPage() {
     },
     {
       name: "Luxury Package",
-      price: "₦450,000", 
       duration: "1 day event",
       features: [
         "Premium tent for 300 guests",
@@ -103,6 +101,12 @@ export default function EquipmentRentalPage() {
     "Custom packages available"
   ];
 
+  const handleWhatsAppClick = (itemName: string) => {
+    const message = `Hi! I'm interested in ${itemName} for my event. Can you provide more details and pricing?`;
+    const whatsappUrl = `https://wa.me/2347025158265?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -122,7 +126,10 @@ export default function EquipmentRentalPage() {
               <button className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full font-semibold hover:from-pink-600 hover:to-rose-600 transition-all duration-300 text-lg">
                 Browse Equipment
               </button>
-              <button className="border-2 border-pink-500 text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-300 text-lg">
+              <button 
+                onClick={() => handleWhatsAppClick("Equipment Rental Services")}
+                className="border-2 border-pink-500 text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-300 text-lg"
+              >
                 Get Quote
               </button>
             </div>
@@ -161,10 +168,13 @@ export default function EquipmentRentalPage() {
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div className="absolute bottom-4 right-4">
-                          <span className="bg-pink-500 text-white px-3 py-1 rounded-full font-semibold text-sm">
-                            {item.price}
-                          </span>
+                        <div className="absolute top-4 right-4">
+                          <button 
+                            onClick={() => handleWhatsAppClick(item.name)}
+                            className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg"
+                          >
+                            <MessageCircle className="h-5 w-5" />
+                          </button>
                         </div>
                       </div>
                       <CardHeader>
@@ -172,8 +182,12 @@ export default function EquipmentRentalPage() {
                         <CardDescription className="text-gray-600">{item.capacity}</CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <button className="w-full bg-gradient-to-r from-pink-500 to-rose-500 text-white py-2 rounded-lg font-semibold hover:from-pink-600 hover:to-rose-600 transition-all duration-300">
-                          Add to Quote
+                        <button 
+                          onClick={() => handleWhatsAppClick(item.name)}
+                          className="w-full bg-gradient-to-r from-pink-500 to-rose-500 text-white py-2 rounded-lg font-semibold hover:from-pink-600 hover:to-rose-600 transition-all duration-300 flex items-center justify-center gap-2"
+                        >
+                          <MessageCircle className="h-4 w-4" />
+                          Get Quote
                         </button>
                       </CardContent>
                     </Card>
@@ -203,11 +217,18 @@ export default function EquipmentRentalPage() {
                     </span>
                   </div>
                 )}
+                <div className="absolute top-4 right-4">
+                  <button 
+                    onClick={() => handleWhatsAppClick(pkg.name)}
+                    className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                  </button>
+                </div>
                 <CardHeader className="text-center pb-4">
                   <CardTitle className="text-2xl text-gray-900 mb-2">{pkg.name}</CardTitle>
                   <div className="mb-4">
-                    <span className="text-4xl font-bold text-pink-600">{pkg.price}</span>
-                    <span className="text-gray-600 ml-2">/ {pkg.duration}</span>
+                    <span className="text-lg text-gray-600">Contact for pricing</span>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -219,7 +240,11 @@ export default function EquipmentRentalPage() {
                       </li>
                     ))}
                   </ul>
-                  <button className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 ${pkg.popular ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white hover:from-pink-600 hover:to-rose-600' : 'border-2 border-pink-500 text-pink-600 hover:bg-pink-50'}`}>
+                  <button 
+                    onClick={() => handleWhatsAppClick(pkg.name)}
+                    className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${pkg.popular ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white hover:from-pink-600 hover:to-rose-600' : 'border-2 border-pink-500 text-pink-600 hover:bg-pink-50'}`}
+                  >
+                    <MessageCircle className="h-4 w-4" />
                     Select Package
                   </button>
                 </CardContent>
@@ -306,10 +331,18 @@ export default function EquipmentRentalPage() {
             Get professional-grade equipment with complete setup and support. Contact us for a custom quote based on your specific needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-300 text-lg">
+            <button 
+              onClick={() => handleWhatsAppClick("Equipment Rental Services")}
+              className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-300 text-lg flex items-center justify-center gap-2"
+            >
+              <MessageCircle className="h-5 w-5" />
               Get Equipment Quote
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 text-lg">
+            <button 
+              onClick={() => handleWhatsAppClick("Equipment Rental Services")}
+              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 text-lg flex items-center justify-center gap-2"
+            >
+              <MessageCircle className="h-5 w-5" />
               Call: 07025158265
             </button>
           </div>
