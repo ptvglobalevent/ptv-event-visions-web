@@ -4,7 +4,7 @@ import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Gallery } from "@/components/Gallery";
 import { Testimonials } from "@/components/Testimonials";
-import { Contact } from "@/components/Contact";
+import { SocialLinks } from "@/components/SocialLinks";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { TrendingHighlights } from "@/components/TrendingHighlights";
@@ -14,6 +14,7 @@ import { ProcessSteps } from "@/components/ProcessSteps";
 import { StatsShowcase } from "@/components/StatsShowcase";
 import { BookingCTA } from "@/components/BookingCTA";
 import { MallEventsBlog } from "@/components/MallEventsBlog";
+import { CommunityPopup } from "@/components/CommunityPopup";
 
 const Index = () => {
   return (
@@ -31,8 +32,9 @@ const Index = () => {
       <StatsShowcase />
       <Testimonials />
       <BookingCTA />
-      <Contact />
+      <SocialLinks />
       <Footer />
+      <CommunityPopup />
     </div>
   );
 };
