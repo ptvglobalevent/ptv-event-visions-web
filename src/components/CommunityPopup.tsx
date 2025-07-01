@@ -42,17 +42,17 @@ export function CommunityPopup() {
             </a>
             
             <a
-              href="https://discord.gg/ptvglobal"
+              href="https://chat.whatsapp.com/CVpyRKXFwE88j5FaFfVk7Q"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-3 bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-4 rounded-lg transition-colors"
             >
               <Users className="w-5 h-5" />
-              <span>Join Discord Community</span>
+              <span>Join WhatsApp Community</span>
             </a>
             
             <a
-              href="https://instagram.com/ptvglobalservices"
+              href="https://www.instagram.com/ptv_global_services_?igsh=NDBwZjYxbjhmbXh6&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-3 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white py-3 px-4 rounded-lg transition-colors"

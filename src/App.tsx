@@ -11,6 +11,7 @@ import BlogPost2 from "./pages/BlogPost2";
 import MallEventsPage from "./pages/MallEventsPage";
 import ServicesPage from "./pages/ServicesPage";
 import EquipmentRentalPage from "./pages/EquipmentRentalPage";
+import MarqueeSetupPage from "./pages/MarqueeSetupPage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/services/mall-events" element={<MallEventsPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/equipment-rental" element={<EquipmentRentalPage />} />
+          <Route path="/marquee-setup" element={<MarqueeSetupPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

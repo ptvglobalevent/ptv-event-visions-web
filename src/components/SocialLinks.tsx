@@ -1,103 +1,76 @@
 
-import { Phone, Mail, MapPin, MessageCircle, Instagram, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { MessageCircle, ExternalLink, Users, Instagram } from "lucide-react";
 
 export function SocialLinks() {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Get In <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Touch</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to start planning your dream event? Connect with us through any of these channels
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="contact" className="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Get In Touch
+        </h2>
+        <p className="text-xl text-gray-600 mb-12">
+          Connect with us through your preferred platform
+        </p>
+        
+        <div className="grid md:grid-cols-3 gap-8">
           {/* WhatsApp */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 text-center hover:shadow-2xl transition-shadow">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <MessageCircle className="w-8 h-8 text-green-600" />
+          <a
+            href="https://wa.me/2347025158265"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="w-16 h-16 bg-green-100 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:bg-green-500 transition-colors">
+              <MessageCircle className="w-8 h-8 text-green-600 group-hover:text-white" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">WhatsApp</h3>
-            <p className="text-gray-600 mb-4">Quick response guaranteed</p>
-            <a
-              href="https://wa.me/2347025158265"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="w-full bg-green-500 hover:bg-green-600">
-                Chat Now
-              </Button>
-            </a>
-          </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">WhatsApp Chat</h3>
+            <p className="text-gray-600 mb-4">Get instant responses to your event planning questions</p>
+            <span className="text-green-600 font-semibold">Start Chat →</span>
+          </a>
 
-          {/* Google Form */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 text-center hover:shadow-2xl transition-shadow">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <FileText className="w-8 h-8 text-blue-600" />
+          {/* WhatsApp Community */}
+          <a
+            href="https://chat.whatsapp.com/CVpyRKXFwE88j5FaFfVk7Q"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="w-16 h-16 bg-indigo-100 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:bg-indigo-500 transition-colors">
+              <Users className="w-8 h-8 text-indigo-600 group-hover:text-white" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Google Form</h3>
-            <p className="text-gray-600 mb-4">Detailed event planning form</p>
-            <a
-              href="https://forms.google.com/ptvglobal-events"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="w-full bg-blue-500 hover:bg-blue-600">
-                Fill Form
-              </Button>
-            </a>
-          </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Join Community</h3>
+            <p className="text-gray-600 mb-4">Connect with other event planners and get updates</p>
+            <span className="text-indigo-600 font-semibold">Join Now →</span>
+          </a>
 
           {/* Instagram */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 text-center hover:shadow-2xl transition-shadow">
-            <div className="w-16 h-16 bg-gradient-to-r from-pink-100 to-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Instagram className="w-8 h-8 text-pink-600" />
+          <a
+            href="https://www.instagram.com/ptv_global_services_?igsh=NDBwZjYxbjhmbXh6&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="w-16 h-16 bg-pink-100 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+              <Instagram className="w-8 h-8 text-pink-600 group-hover:text-white" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Instagram</h3>
-            <p className="text-gray-600 mb-4">See our latest work</p>
-            <a
-              href="https://instagram.com/ptvglobalservices"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600">
-                Follow Us
-              </Button>
-            </a>
-          </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Follow Us</h3>
+            <p className="text-gray-600 mb-4">See our latest events and behind-the-scenes content</p>
+            <span className="text-pink-600 font-semibold">Follow →</span>
+          </a>
         </div>
 
-        {/* Contact Information */}
-        <div className="mt-16 bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl p-8 text-white">
-          <h3 className="text-2xl font-bold mb-8 text-center">Contact Information</h3>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <Phone className="h-8 w-8 text-blue-300 mx-auto mb-3" />
-              <h4 className="font-semibold mb-2">Phone</h4>
-              <a href="tel:07025158265" className="text-blue-100 hover:text-white transition-colors">
-                07025158265
-              </a>
-            </div>
-            
-            <div className="text-center">
-              <Mail className="h-8 w-8 text-purple-300 mx-auto mb-3" />
-              <h4 className="font-semibold mb-2">Email</h4>
-              <a href="mailto:ptvglobalservices@gmail.com" className="text-blue-100 hover:text-white transition-colors">
-                ptvglobalservices@gmail.com
-              </a>
-            </div>
-            
-            <div className="text-center">
-              <MapPin className="h-8 w-8 text-pink-300 mx-auto mb-3" />
-              <h4 className="font-semibold mb-2">Location</h4>
-              <p className="text-blue-100">Lagos, Nigeria</p>
-            </div>
-          </div>
+        <div className="mt-12 p-6 bg-white rounded-xl shadow-lg">
+          <h3 className="text-xl font-bold text-gray-900 mb-4">Request Detailed Quote</h3>
+          <p className="text-gray-600 mb-6">Need a comprehensive quote for your event? Fill out our detailed form:</p>
+          <a
+            href="https://forms.gle/your-google-form-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
+          >
+            <ExternalLink className="w-5 h-5 mr-2" />
+            Open Quote Form
+          </a>
         </div>
       </div>
     </section>

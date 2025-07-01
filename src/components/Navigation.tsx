@@ -62,6 +62,12 @@ export function Navigation() {
                     >
                       Mall Events (Fashion + Food Expos)
                     </a>
+                    <a 
+                      href="/marquee-setup" 
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors font-medium"
+                    >
+                      Marquee Event Setup
+                    </a>
                   </div>
                 )}
               </div>
@@ -110,6 +116,9 @@ export function Navigation() {
                 </a>
                 <a href="/services/mall-events" className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-600 w-full text-left font-medium">
                   Mall Events (Fashion + Food Expos)
+                </a>
+                <a href="/marquee-setup" className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-600 w-full text-left font-medium">
+                  Marquee Event Setup
                 </a>
               </div>
             </div>
