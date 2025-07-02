@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
@@ -6,6 +5,36 @@ export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
+    {
+      src: "/lovable-uploads/e4beb677-aba1-4563-856d-19dde3b21dda.png",
+      title: "Professional Stage Setup with LED Lighting",
+      category: "Stage & Lighting"
+    },
+    {
+      src: "/lovable-uploads/e06b9857-de37-4257-b4d9-aa13f04558a8.png",
+      title: "Concert Hall with Premium Sound & Visuals",
+      category: "Concert"
+    },
+    {
+      src: "/lovable-uploads/639e5c3d-a06f-4c14-9008-868acbc48524.png",
+      title: "Exhibition Tent Setup",
+      category: "Exhibition"
+    },
+    {
+      src: "/lovable-uploads/dbf28f7f-4f63-4621-8948-5dde5d5e97f1.png",
+      title: "Large Scale Event with Seating Arrangement",
+      category: "Corporate"
+    },
+    {
+      src: "/lovable-uploads/f393f62a-6863-41c5-9741-a4d85252b730.png",
+      title: "Luxury Wedding Setup with Crystal Chandeliers",
+      category: "Wedding"
+    },
+    {
+      src: "/lovable-uploads/47888e20-d7d7-4b0c-b132-1bd59f020abd.png",
+      title: "Elegant Reception Hall Setup",
+      category: "Reception"
+    },
     {
       src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Elegant Wedding Reception",
@@ -92,17 +121,17 @@ export function Gallery() {
           </p>
         </div>
 
-        {/* Featured Mall Events Section */}
+        {/* Featured Recent Work Section */}
         <div className="mb-16 bg-white/60 backdrop-blur-sm rounded-3xl p-8">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-            Featured <span className="text-pink-600">Mall Event Setups</span>
+            Featured <span className="text-pink-600">Recent Projects</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            {galleryImages.filter(img => img.category === "Mall Event").map((image, index) => (
+            {galleryImages.slice(0, 6).map((image, index) => (
               <div 
                 key={index}
                 className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                onClick={() => setSelectedImage(galleryImages.findIndex(img => img.src === image.src))}
+                onClick={() => setSelectedImage(index)}
               >
                 <img 
                   src={image.src} 
@@ -128,17 +157,14 @@ export function Gallery() {
               </div>
             ))}
           </div>
-          <div className="text-center">
-            <p className="text-pink-600 font-medium">Sample layouts for mall events - contact us for your custom setup!</p>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryImages.filter(img => img.category !== "Mall Event").map((image, index) => (
+          {galleryImages.slice(6).map((image, index) => (
             <div 
-              key={index}
+              key={index + 6}
               className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              onClick={() => setSelectedImage(galleryImages.findIndex(img => img.src === image.src))}
+              onClick={() => setSelectedImage(index + 6)}
             >
               <img 
                 src={image.src} 
