@@ -11,28 +11,28 @@ export default function MallEventsPage() {
       title: "Fashion Show Setup",
       description: "Professional runway construction with stage lighting and sound systems",
       features: ["30ft professional runway", "LED stage lighting", "Sound system integration", "VIP seating areas"],
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png"
     },
     {
       icon: Utensils,
       title: "Food & Drink Exhibitions",
       description: "Vendor booth layouts and professional kitchen setups",
       features: ["Custom booth partitioning", "Food prep areas", "Display refrigeration", "Dining space setup"],
-      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png"
     },
     {
       icon: ShoppingBag,
       title: "Product Exhibitions",
       description: "Branded display areas and interactive product showcases",
       features: ["Interactive displays", "Product demonstration areas", "Branded environments", "Customer engagement zones"],
-      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png"
     }
   ];
 
   const equipment = [
-    { name: "LED Video Walls", specs: "P3.91 Indoor LED panels, 500x1000mm", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Professional Audio", specs: "Line array speakers, wireless mics", image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Stage Lighting", specs: "LED wash lights, spotlights, DMX control", image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "LED Video Walls", specs: "P3.91 Indoor LED panels, 500x1000mm", image: "/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png" },
+    { name: "Professional Audio", specs: "Line array speakers, wireless mics", image: "/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png" },
+    { name: "Stage Lighting", specs: "LED wash lights, spotlights, DMX control", image: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png" },
     { name: "Power Solutions", specs: "15KVA generators, distribution boards", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
   ];
 
@@ -42,7 +42,7 @@ export default function MallEventsPage() {
       location: "Ikeja, Lagos",
       attendees: "2,000+",
       description: "Complete mall transformation featuring a 30ft runway, designer showcases, and food court integration.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      image: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png",
       features: ["Fashion runway", "Food exhibitions", "VIP lounges", "Media coverage area"]
     },
     {
@@ -50,7 +50,7 @@ export default function MallEventsPage() {
       location: "Lekki, Lagos", 
       attendees: "1,500+",
       description: "Large-scale food expo with 40+ vendors, cooking demonstrations, and tasting areas.",
-      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      image: "/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png",
       features: ["Vendor booths", "Demo kitchens", "Tasting areas", "Live cooking shows"]
     },
     {
@@ -58,7 +58,7 @@ export default function MallEventsPage() {
       location: "Surulere, Lagos",
       attendees: "800+", 
       description: "Interactive product showcase with demonstration areas and customer experience zones.",
-      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png",
       features: ["Interactive displays", "Demo stations", "Customer lounges", "Product theaters"]
     }
   ];
@@ -69,7 +69,7 @@ export default function MallEventsPage() {
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-pink-50 to-rose-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png')] bg-cover bg-center opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -79,9 +79,14 @@ export default function MallEventsPage() {
               Transform shopping malls and commercial spaces into world-class event venues for fashion shows, product exhibitions, and food & drink expos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full font-semibold hover:from-pink-600 hover:to-rose-600 transition-all duration-300 text-lg">
+              <a 
+                href="https://forms.gle/C5oBMZyfViCovvGs7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full font-semibold hover:from-pink-600 hover:to-rose-600 transition-all duration-300 text-lg"
+              >
                 Get Free Quote
-              </button>
+              </a>
               <button className="border-2 border-pink-500 text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-300 text-lg">
                 View Portfolio
               </button>
@@ -224,12 +229,22 @@ export default function MallEventsPage() {
             From concept to execution, we handle every detail of your mall event setup. Contact us for a custom quote tailored to your vision and budget.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-300 text-lg">
+            <a 
+              href="https://forms.gle/C5oBMZyfViCovvGs7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold hover:bg-pink-50 transition-colors duration-300 text-lg"
+            >
               Schedule Consultation
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 text-lg">
-              Call Now: 07025158265
-            </button>
+            </a>
+            <a
+              href="https://wa.me/2347025158265"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 text-lg"
+            >
+              WhatsApp: 07025158265
+            </a>
           </div>
         </div>
       </section>

@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Navigation } from "@/components/Navigation";
@@ -12,7 +11,8 @@ export default function MarqueeSetupPage() {
       
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 bg-gradient-to-br from-pink-50 to-purple-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png')] bg-cover bg-center opacity-10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-2 text-green-600 mb-4">
@@ -55,7 +55,7 @@ export default function MarqueeSetupPage() {
             
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png"
                 alt="Premium Marquee Setup"
                 className="rounded-2xl shadow-2xl"
               />
@@ -95,7 +95,7 @@ export default function MarqueeSetupPage() {
                 </ul>
                 <div className="mt-4">
                   <img
-                    src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    src="/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png"
                     alt="Marquee Structure"
                     className="rounded-lg w-full h-32 object-cover"
                   />
@@ -121,7 +121,7 @@ export default function MarqueeSetupPage() {
                 </ul>
                 <div className="mt-4">
                   <img
-                    src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    src="/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png"
                     alt="Air Conditioning Setup"
                     className="rounded-lg w-full h-32 object-cover"
                   />
@@ -147,7 +147,7 @@ export default function MarqueeSetupPage() {
                 </ul>
                 <div className="mt-4">
                   <img
-                    src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    src="/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png"
                     alt="Event Lighting"
                     className="rounded-lg w-full h-32 object-cover"
                   />
@@ -174,7 +174,7 @@ export default function MarqueeSetupPage() {
                 </ul>
                 <div className="mt-4">
                   <img
-                    src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    src="/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png"
                     alt="Event Furniture"
                     className="rounded-lg w-full h-32 object-cover"
                   />
@@ -200,7 +200,7 @@ export default function MarqueeSetupPage() {
                 </ul>
                 <div className="mt-4">
                   <img
-                    src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    src="/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png"
                     alt="Sound System"
                     className="rounded-lg w-full h-32 object-cover"
                   />
@@ -279,12 +279,12 @@ export default function MarqueeSetupPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              "https://images.unsplash.com/photo-1519167758481-83f29c18da19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-              "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-              "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-              "https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-              "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-              "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png",
+              "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png",
+              "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png",
+              "/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png",
+              "/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png",
+              "/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png"
             ].map((image, index) => (
               <div key={index} className="group relative overflow-hidden rounded-xl">
                 <img
@@ -364,7 +364,7 @@ export default function MarqueeSetupPage() {
               Call Now
             </a>
             <a
-              href="https://forms.gle/your-google-form-link"
+              href="https://forms.gle/C5oBMZyfViCovvGs7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-purple-500 hover:bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"

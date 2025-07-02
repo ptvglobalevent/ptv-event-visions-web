@@ -10,57 +10,57 @@ export function EventCategories() {
     {
       name: "Weddings",
       description: "Dream weddings with perfect planning",
-      image: "https://images.unsplash.com/photo-1519167758481-83f29c2c2cd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png",
       events: [
         {
           title: "Garden Destination Weddings",
-          image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png"
         },
         {
           title: "Luxury Beach Ceremonies", 
-          image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png"
         },
         {
           title: "Traditional & Cultural Weddings",
-          image: "https://images.unsplash.com/photo-1583391733981-3a7a2b1d6fc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png"
         }
       ]
     },
     {
       name: "Corporate",
       description: "Professional events that inspire",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png",
       events: [
         {
           title: "Conference & Conventions",
-          image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png"
         },
         {
           title: "Product Launch Events",
-          image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png"
         },
         {
           title: "Awards & Gala Dinners",
-          image: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png"
         }
       ]
     },
     {
       name: "Social Events",
       description: "Celebrate life's special moments",
-      image: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png",
       events: [
         {
           title: "Birthday Celebrations",
-          image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png"
         },
         {
           title: "Anniversary Parties",
-          image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png"
         },
         {
           title: "Family Reunions",
-          image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+          image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png"
         }
       ]
     }
