@@ -1,6 +1,7 @@
 
 import { Play, Volume2, VolumeX } from "lucide-react";
 import { useState, useRef } from "react";
+import { InquiryForm } from "@/components/InquiryForm";
 
 export function VideoShowcase() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -88,15 +89,17 @@ export function VideoShowcase() {
             {/* Call to action below video */}
             <div className="text-center mt-8">
               <p className="text-gray-600 mb-4">Ready to create your perfect event?</p>
-              <button 
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
-              >
-                Get Started Today
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://wa.me/2347025158265"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"
+                >
+                  Get Started Today
+                </a>
+                <InquiryForm className="px-6 py-3 rounded-full" />
+              </div>
             </div>
           </div>
         </div>

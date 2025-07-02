@@ -1,5 +1,6 @@
 
 import { Phone, Mail, MapPin, Heart } from "lucide-react";
+import { InquiryForm } from "@/components/InquiryForm";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -95,7 +96,7 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 space-y-3">
               <a 
                 href="https://wa.me/2347025158265" 
                 target="_blank" 
@@ -104,6 +105,9 @@ export function Footer() {
               >
                 <span>WhatsApp Us</span>
               </a>
+              <div className="mt-3">
+                <InquiryForm className="w-full bg-blue-600 hover:bg-blue-700 border-0" />
+              </div>
             </div>
           </div>
         </div>

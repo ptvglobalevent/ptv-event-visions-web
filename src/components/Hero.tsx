@@ -1,8 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
+import { InquiryForm } from "@/components/InquiryForm";
 
 export function Hero() {
   const scrollToContact = () => {
@@ -70,12 +70,14 @@ export function Hero() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in delay-700">
-              <Button 
-                onClick={scrollToContact}
-                className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl"
+              <a
+                href="https://wa.me/2347025158265"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl inline-flex items-center justify-center"
               >
-                Get a Quote <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+                Get Started <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
               
               <div className="flex items-center space-x-4">
                 <a 
@@ -86,14 +88,7 @@ export function Hero() {
                   <span className="font-medium">Call Now</span>
                 </a>
                 
-                <a 
-                  href="https://wa.me/2347025158265" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 bg-green-500/80 backdrop-blur-sm px-6 py-4 rounded-full hover:bg-green-500 transition-all duration-300 text-white"
-                >
-                  <span className="font-medium">WhatsApp</span>
-                </a>
+                <InquiryForm className="px-6 py-4 rounded-full" />
               </div>
             </div>
             

@@ -1,7 +1,7 @@
-
 import { useState } from "react";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { InquiryForm } from "@/components/InquiryForm";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,6 +78,9 @@ export function Navigation() {
               <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors">
                 Contact
               </button>
+              
+              <InquiryForm className="px-4 py-2 text-sm" />
+              
               <div className="flex items-center space-x-2 ml-4">
                 <Phone className="h-4 w-4 text-pink-600" />
                 <span className="text-sm font-medium text-pink-600">07025158265</span>
@@ -128,6 +131,9 @@ export function Navigation() {
             <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-pink-600 w-full text-left">
               Contact
             </button>
+            <div className="px-3 py-2">
+              <InquiryForm className="w-full" />
+            </div>
             <div className="flex items-center space-x-2 px-3 py-2">
               <Phone className="h-4 w-4 text-pink-600" />
               <span className="text-sm font-medium text-pink-600">07025158265</span>
@@ -158,6 +164,8 @@ export function Navigation() {
           <Phone className="w-8 h-8" />
         </a>
       </div>
+      
+      <InquiryForm variant="floating" />
     </nav>
   );
 }
