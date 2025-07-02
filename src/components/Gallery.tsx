@@ -6,6 +6,36 @@ export function Gallery() {
 
   const galleryImages = [
     {
+      src: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png",
+      title: "Outdoor Event Tent Setup",
+      category: "Outdoor Events"
+    },
+    {
+      src: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png",
+      title: "Premium White Event Marquee",
+      category: "Marquee Setup"
+    },
+    {
+      src: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png",
+      title: "Elegant Wedding Reception with Lighting",
+      category: "Wedding"
+    },
+    {
+      src: "/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png",
+      title: "Large Scale Conference Setup",
+      category: "Corporate"
+    },
+    {
+      src: "/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png",
+      title: "Auditorium Event with Premium Seating",
+      category: "Corporate"
+    },
+    {
+      src: "/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png",
+      title: "Spectacular Stage Setup with Aircraft Display",
+      category: "Exhibition"
+    },
+    {
       src: "/lovable-uploads/e4beb677-aba1-4563-856d-19dde3b21dda.png",
       title: "Professional Stage Setup with LED Lighting",
       category: "Stage & Lighting"
@@ -121,7 +151,7 @@ export function Gallery() {
           </p>
         </div>
 
-        {/* Featured Recent Work Section */}
+        {/* Featured Recent Work Section - Now showing the new uploaded images */}
         <div className="mb-16 bg-white/60 backdrop-blur-sm rounded-3xl p-8">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
             Featured <span className="text-pink-600">Recent Projects</span>
@@ -225,7 +255,7 @@ export function Gallery() {
         )}
 
         <div className="mt-16 relative bg-gradient-to-r from-pink-500 to-rose-500 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-20"></div>
+          <div className="absolute inset-0 bg-[url('/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png')] bg-cover bg-center opacity-20"></div>
           <div className="relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create Magic?</h3>
             <p className="text-xl text-pink-100 mb-8">

@@ -9,28 +9,28 @@ export function TrendingHighlights() {
 
   const highlights = [
     {
-      title: "Sustainable Event Solutions",
-      category: "Eco-Friendly",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Green event planning with eco-conscious equipment and sustainable practices"
+      title: "Premium Marquee Solutions",
+      category: "Outdoor Events",
+      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png",
+      description: "Professional outdoor event marquees with elegant white tenting and climate control"
     },
     {
       title: "Luxury Corporate Events", 
       category: "Corporate",
-      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Premium corporate event setups with state-of-the-art technology"
+      image: "/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png",
+      description: "Large-scale corporate event setups with premium seating and professional staging"
     },
     {
-      title: "Destination Wedding Planning",
+      title: "Elegant Wedding Receptions",
       category: "Wedding",
-      image: "https://images.unsplash.com/photo-1519167758481-83f29c2c2cd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Breathtaking destination weddings with complete logistics management"
+      image: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png",
+      description: "Breathtaking wedding receptions with ambient lighting and luxury table settings"
     },
     {
-      title: "Festival & Concert Setup",
-      category: "Entertainment",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      description: "Large-scale festival and concert event management with professional staging"
+      title: "Spectacular Exhibition Setup",
+      category: "Exhibition",
+      image: "/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png",
+      description: "Innovative exhibition designs with dramatic displays and professional rigging"
     }
   ];
 

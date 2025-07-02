@@ -12,28 +12,28 @@ export function ProcessSteps() {
       icon: Users,
       title: "Consultation & Planning",
       description: "We start with understanding your vision, requirements, and budget to create the perfect event plan",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png",
       details: ["Initial consultation", "Budget planning", "Venue selection", "Timeline creation"]
     },
     {
       icon: Settings,
       title: "Design & Coordination",
       description: "Our expert team designs your event layout and coordinates all vendors and logistics seamlessly",
-      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png",
       details: ["Event design", "Vendor coordination", "Equipment planning", "Logistics management"]
     },
     {
       icon: Clock,
       title: "Setup & Execution",
       description: "Professional setup and real-time event management to ensure everything runs perfectly",
-      image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png",
       details: ["Professional setup", "Quality assurance", "On-site coordination", "Real-time support"]
     },
     {
       icon: CheckCircle,
       title: "Success & Follow-up",
       description: "Celebrating your successful event and gathering feedback for continuous improvement",
-      image: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png",
       details: ["Event execution", "Guest satisfaction", "Cleanup service", "Follow-up support"]
     }
   ];

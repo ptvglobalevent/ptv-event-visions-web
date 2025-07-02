@@ -37,7 +37,7 @@ export function StatsShowcase() {
   return (
     <section className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-pink-900 via-rose-900 to-pink-800"></div>
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png')] bg-cover bg-center opacity-10"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
