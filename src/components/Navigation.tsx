@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { InquiryForm } from "@/components/InquiryForm";
+import { Logo } from "@/components/Logo";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,12 +22,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <a href="/" className="block">
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
-                PTV GLOBAL SERVICES
-              </h1>
-              <p className="text-sm text-rose-500 -mt-1">Your Event, Our Priority</p>
-            </a>
+            <Logo />
           </div>
           
           <div className="hidden md:block">
