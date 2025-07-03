@@ -26,6 +26,11 @@ export function VideoShowcase() {
     }
   };
 
+  // Convert YouTube URL to embeddable format
+  const youtubeUrl = "https://youtube.com/shorts/vhft62O17FQ?feature=share";
+  const videoId = youtubeUrl.split('/').pop()?.split('?')[0];
+  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+
   return (
     <section className="py-20 bg-gradient-to-br from-rose-50 to-pink-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,45 +47,21 @@ export function VideoShowcase() {
           <div className="relative w-full max-w-sm mx-auto">
             {/* Video Container with 9:16 aspect ratio */}
             <div className="relative bg-black rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: '9/16' }}>
-              {/* Placeholder for video - replace src with actual video URL */}
-              <video
-                ref={videoRef}
-                className="w-full h-full object-cover"
-                muted={isMuted}
-                loop
-                playsInline
-                poster="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-              >
-                {/* Add your video source here */}
-                <source src="#" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-
-              {/* Play/Pause Button */}
-              <button
-                onClick={togglePlay}
-                className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-all duration-300"
-              >
-                {!isPlaying && (
-                  <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                    <Play className="w-8 h-8 text-pink-600 ml-1" />
-                  </div>
-                )}
-              </button>
-
-              {/* Sound Toggle */}
-              <button
-                onClick={toggleMute}
-                className="absolute top-4 right-4 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all duration-300"
-              >
-                {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
-              </button>
+              {/* YouTube iframe embed */}
+              <iframe
+                src={embedUrl}
+                className="w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="PTV Global Services Event Setup Video"
+              ></iframe>
 
               {/* Instagram-style gradient overlay at bottom */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
               
               {/* Caption area */}
-              <div className="absolute bottom-4 left-4 right-4 text-white">
+              <div className="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
                 <p className="text-sm font-medium">✨ Premium Event Setup</p>
                 <p className="text-xs text-white/80 mt-1">#PTVGlobalServices #EventPlanning</p>
               </div>
