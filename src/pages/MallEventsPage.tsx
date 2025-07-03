@@ -1,4 +1,3 @@
-
 import { Calendar, MapPin, Users, Star, Camera, Utensils, ShoppingBag, Zap, Monitor, Music, Settings } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navigation } from "@/components/Navigation";
@@ -38,7 +37,7 @@ export default function MallEventsPage() {
 
   const projects = [
     {
-      title: "Lagos Fashion Week - Ikeja City Mall",
+      title: "Lagos Fashion Week",
       location: "Ikeja, Lagos",
       attendees: "2,000+",
       description: "Complete mall transformation featuring a 30ft runway, designer showcases, and food court integration.",
