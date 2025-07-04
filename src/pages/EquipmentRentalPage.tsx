@@ -43,7 +43,7 @@ export default function EquipmentRentalPage() {
       description: "Reliable power and climate control solutions",
       items: [
         { name: "Generators", capacity: "15KVA - 100KVA", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-        { name: "Air Conditioners", capacity: "5HP mobile units", image: "https://images.unsplash.com/photo-1635948321059-de2ad7db523a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        
         { name: "Industrial Fans", capacity: "Standing fans", image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
       ]
     }
