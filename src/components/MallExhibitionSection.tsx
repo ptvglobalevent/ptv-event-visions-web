@@ -1,5 +1,5 @@
 
-import { Camera, ShoppingBag } from "lucide-react";
+import { Camera, ShoppingBag, Utensils } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -10,14 +10,21 @@ export function MallExhibitionSection() {
       title: "Fashion Show Setup",
       description: "Professional runway construction with stage lighting and premium seating arrangements",
       features: ["30ft professional runway", "LED stage lighting", "Sound system integration", "VIP seating areas"],
-      image: "/lovable-uploads/fd529964-7957-4db7-9f16-eff01ec4bf59.png"
+      image: "/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png"
+    },
+    {
+      icon: Utensils,
+      title: "Food & Drink Exhibitions",
+      description: "Vendor booth layouts and professional kitchen setups for food and beverage events",
+      features: ["Professional kitchen setups", "Vendor booth layouts", "Food safety compliance", "Tasting areas"],
+      image: "/lovable-uploads/e4beb677-aba1-4563-856d-19dde3b21dda.png"
     },
     {
       icon: ShoppingBag,
       title: "Product Exhibition",
       description: "Branded display areas and interactive product showcases with modern installations",
       features: ["Interactive displays", "Product demonstration areas", "Branded environments", "Customer engagement zones"],
-      image: "/lovable-uploads/074f607c-6f1b-49f5-954f-4437b01000e7.png"
+      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png"
     }
   ];
 
@@ -33,7 +40,7 @@ export function MallExhibitionSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
             <Card key={index} className="h-full hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden group">
               <div className="relative h-80 overflow-hidden">
