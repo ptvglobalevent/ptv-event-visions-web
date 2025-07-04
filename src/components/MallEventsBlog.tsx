@@ -1,4 +1,3 @@
-
 import { Calendar, MapPin, Users, Star } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -7,10 +6,10 @@ export function MallEventsBlog() {
   const caseStudies = [
     {
       title: "How We Set Up a Full Mall for Fashion & Food Exhibitions",
-      excerpt: "A comprehensive case study of transforming Ikeja City Mall into a world-class fashion runway and food expo venue.",
+      excerpt: "A comprehensive case study of transforming shopping malls into world-class fashion runway and food expo venues.",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       date: "December 2024",
-      location: "Ikeja City Mall, Lagos",
+      location: "Various Locations",
       attendees: "2,000+",
       rating: 5,
       link: "/blog/mall-fashion-food-exhibition-setup"
