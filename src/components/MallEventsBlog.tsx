@@ -1,3 +1,4 @@
+
 import { Calendar, MapPin, Users, Star } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -7,7 +8,7 @@ export function MallEventsBlog() {
     {
       title: "How We Set Up a Full Mall for Fashion & Food Exhibitions",
       excerpt: "A comprehensive case study of transforming shopping malls into world-class fashion runway and food expo venues.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/fd529964-7957-4db7-9f16-eff01ec4bf59.png",
       date: "December 2024",
       location: "Various Locations",
       attendees: "2,000+",
@@ -17,7 +18,7 @@ export function MallEventsBlog() {
     {
       title: "5 Things to Know Before Hosting an Event in a Shopping Mall",
       excerpt: "Essential tips and considerations for successful mall event planning and execution.",
-      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/074f607c-6f1b-49f5-954f-4437b01000e7.png",
       date: "November 2024",
       location: "Various Locations",
       attendees: "Guide",
