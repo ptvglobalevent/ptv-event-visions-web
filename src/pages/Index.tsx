@@ -16,6 +16,7 @@ import { StatsShowcase } from "@/components/StatsShowcase";
 import { BookingCTA } from "@/components/BookingCTA";
 import { MallEventsBlog } from "@/components/MallEventsBlog";
 import { CommunityPopup } from "@/components/CommunityPopup";
+import { MallExhibitionSection } from "@/components/MallExhibitionSection";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       <TrendingHighlights />
       <About />
       <Services />
+      <MallExhibitionSection />
       <ExploreExperiences />
       <EventCategories />
       <ProcessSteps />

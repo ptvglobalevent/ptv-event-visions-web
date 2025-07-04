@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -37,7 +36,7 @@ export function EventCategories() {
         },
         {
           title: "Product Launch Events",
-          image: "/lovable-uploads/3cdd6355-9cbe-4cb0-8aef-251e3fac4472.png"
+          image: "/lovable-uploads/074f607c-6f1b-49f5-954f-4437b01000e7.png"
         },
         {
           title: "Awards & Gala Dinners",

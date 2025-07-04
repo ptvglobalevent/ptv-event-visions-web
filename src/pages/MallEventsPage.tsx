@@ -7,10 +7,10 @@ export default function MallEventsPage() {
   const services = [
     {
       icon: Camera,
-      title: "Fashion Show Setup",
+      title: "Fashion Show Setup", 
       description: "Professional runway construction with stage lighting and sound systems",
       features: ["30ft professional runway", "LED stage lighting", "Sound system integration", "VIP seating areas"],
-      image: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png"
+      image: "/lovable-uploads/fd529964-7957-4db7-9f16-eff01ec4bf59.png"
     },
     {
       icon: Utensils,
@@ -24,7 +24,7 @@ export default function MallEventsPage() {
       title: "Product Exhibitions",
       description: "Branded display areas and interactive product showcases",
       features: ["Interactive displays", "Product demonstration areas", "Branded environments", "Customer engagement zones"],
-      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png"
+      image: "/lovable-uploads/074f607c-6f1b-49f5-954f-4437b01000e7.png"
     }
   ];
 
@@ -38,10 +38,10 @@ export default function MallEventsPage() {
   const projects = [
     {
       title: "Lagos Fashion Week",
-      location: "Ikeja, Lagos",
+      location: "Lagos",
       attendees: "2,000+",
       description: "Complete mall transformation featuring a 30ft runway, designer showcases, and food court integration.",
-      image: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png",
+      image: "/lovable-uploads/fd529964-7957-4db7-9f16-eff01ec4bf59.png",
       features: ["Fashion runway", "Food exhibitions", "VIP lounges", "Media coverage area"]
     },
     {
@@ -57,7 +57,7 @@ export default function MallEventsPage() {
       location: "Surulere, Lagos",
       attendees: "800+", 
       description: "Interactive product showcase with demonstration areas and customer experience zones.",
-      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png",
+      image: "/lovable-uploads/074f607c-6f1b-49f5-954f-4437b01000e7.png",
       features: ["Interactive displays", "Demo stations", "Customer lounges", "Product theaters"]
     }
   ];

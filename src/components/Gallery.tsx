@@ -6,14 +6,14 @@ export function Gallery() {
 
   const galleryImages = [
     {
-      src: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png",
-      title: "Outdoor Event Tent Setup",
-      category: "Outdoor Events"
+      src: "/lovable-uploads/fd529964-7957-4db7-9f16-eff01ec4bf59.png",
+      title: "Fashion Show Runway Setup",
+      category: "Fashion Show"
     },
     {
-      src: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png",
-      title: "Premium White Event Marquee",
-      category: "Marquee Setup"
+      src: "/lovable-uploads/074f607c-6f1b-49f5-954f-4437b01000e7.png",
+      title: "Modern Product Exhibition",
+      category: "Product Exhibition"
     },
     {
       src: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png",
@@ -66,6 +66,16 @@ export function Gallery() {
       category: "Reception"
     },
     {
+      src: "/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png",
+      title: "Outdoor Event Tent Setup",
+      category: "Outdoor Events"
+    },
+    {
+      src: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png",
+      title: "Premium White Event Marquee",
+      category: "Marquee Setup"
+    },
+    {
       src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Elegant Wedding Reception",
       category: "Wedding"
@@ -74,16 +84,6 @@ export function Gallery() {
       src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       title: "Corporate Event Setup",
       category: "Corporate"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Fashion Show Runway Setup",
-      category: "Mall Event"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Mall Exhibition Layout",
-      category: "Mall Event"
     },
     {
       src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -255,7 +255,7 @@ export function Gallery() {
         )}
 
         <div className="mt-16 relative bg-gradient-to-r from-pink-500 to-rose-500 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/lovable-uploads/c7514ba7-95f2-4e4f-a424-64267ae101c1.png')] bg-cover bg-center opacity-20"></div>
+          <div className="absolute inset-0 bg-[url('/lovable-uploads/fd529964-7957-4db7-9f16-eff01ec4bf59.png')] bg-cover bg-center opacity-20"></div>
           <div className="relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create Magic?</h3>
             <p className="text-xl text-pink-100 mb-8">
