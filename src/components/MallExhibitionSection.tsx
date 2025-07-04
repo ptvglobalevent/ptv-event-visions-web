@@ -10,21 +10,21 @@ export function MallExhibitionSection() {
       title: "Fashion Show Setup",
       description: "Professional runway construction with stage lighting and premium seating arrangements",
       features: ["30ft professional runway", "LED stage lighting", "Sound system integration", "VIP seating areas"],
-      image: "/lovable-uploads/48bb4ff8-4207-442a-b235-a568d6602a0d.png"
+      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png"
     },
     {
       icon: Utensils,
       title: "Food & Drink Exhibitions",
       description: "Vendor booth layouts and professional kitchen setups for food and beverage events",
       features: ["Professional kitchen setups", "Vendor booth layouts", "Food safety compliance", "Tasting areas"],
-      image: "/lovable-uploads/e4beb677-aba1-4563-856d-19dde3b21dda.png"
+      image: "/lovable-uploads/708d6a16-163a-4b91-bcc4-a454e6cfebbb.png"
     },
     {
       icon: ShoppingBag,
       title: "Product Exhibition",
       description: "Branded display areas and interactive product showcases with modern installations",
       features: ["Interactive displays", "Product demonstration areas", "Branded environments", "Customer engagement zones"],
-      image: "/lovable-uploads/16337fc2-3de9-42c8-81df-43ec37345763.png"
+      image: "/lovable-uploads/08b7e79a-8b35-4a18-ad7b-d1670c2f7d3a.png"
     }
   ];
 
